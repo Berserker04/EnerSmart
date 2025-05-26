@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.env.*  # for .env.dev, .env.prod, etc.
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# macOS / Linux / Windows system files
+.DS_Store
+Thumbs.db
+
+# Python cache
+.cache/
+.pytest_cache/
+
+# Local test or coverage
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Migrations (if using alembic, optional)
+migrations/
+
+# FastAPI / Uvicorn
+*.db  # if you have SQLite dbs
