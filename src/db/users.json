@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "fullName": "Administrador",
+        "userName": "admin",
+        "password": "123",
+        "rol": "Admin",
+        "diagnostic": []
+    },
+    {
+        "id": 1,
+        "fullName": "Carlos Hernandez",
+        "userName": "carlosH",
+        "password": "123",
+        "rol": "Client",
+        "diagnostic": []
+    }
+]
