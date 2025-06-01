@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "¿Usas bombillas incandescentes en tu hogar?",
+    "description": "Cambia tus bombillas incandescentes por bombillas LED para reducir el consumo energético.",
+    "estimated_saving": 0.10
+  },
+  {
+    "id": 2,
+    "question": "¿Usas frecuentemente la lavadora con agua caliente o la secadora?",
+    "description": "Lava con agua fría y seca la ropa al aire libre para ahorrar energía.",
+    "estimated_saving": 0.08
+  },
+  {
+    "id": 3,
+    "question": "¿Mantienes luces encendidas durante el día?",
+    "description": "Aprovecha la luz natural y apaga las luces innecesarias durante el día.",
+    "estimated_saving": 0.05
+  },
+  {
+    "id": 4,
+    "question": "¿Tienes aire acondicionado en tu hogar?",
+    "description": "Limpia los filtros regularmente y ajusta el termostato para mejorar la eficiencia.",
+    "estimated_saving": 0.07
+  },
+  {
+    "id": 5,
+    "question": "¿Tienes filtraciones de aire por puertas o ventanas?",
+    "description": "Sella las fugas con burletes o masilla para mantener la temperatura interior.",
+    "estimated_saving": 0.04
+  },
+  {
+    "id": 6,
+    "question": "¿Tienes un calentador de agua tradicional con tanque?",
+    "description": "Considera cambiar a un calentador sin tanque o solar para ahorrar energía.",
+    "estimated_saving": 0.09
+  },
+  {
+    "id": 7,
+    "question": "¿Tu refrigerador tiene más de 10 años de uso?",
+    "description": "Reemplaza el refrigerador antiguo por uno de alta eficiencia energética (certificado).",
+    "estimated_saving": 0.11
+  },
+  {
+    "id": 8,
+    "question": "¿Dejas los cargadores conectados cuando no los estás usando?",
+    "description": "Desconecta cargadores y aparatos que no estás utilizando para evitar consumo fantasma.",
+    "estimated_saving": 0.03
+  },
+  {
+    "id": 9,
+    "question": "¿Utilizas regletas sin interruptor para varios dispositivos?",
+    "description": "Usa regletas con interruptor para apagar varios dispositivos al mismo tiempo.",
+    "estimated_saving": 0.02
+  },
+  {
+    "id": 10,
+    "question": "¿Usas plancha, horno o secador de cabello varias veces por semana?",
+    "description": "Agrupa los usos de estos equipos para reducir la frecuencia de consumo energético.",
+    "estimated_saving": 0.06
+  }
+]
