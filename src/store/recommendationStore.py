@@ -15,6 +15,7 @@ def save_all(recommendations: List[Recommendation]):
 
 def add(recommendation: Recommendation):
     recs = load_all()
+    recommendation.id = max((u.id for u in recs), default=0) + 1
     recs.append(recommendation)
     save_all(recs)
 

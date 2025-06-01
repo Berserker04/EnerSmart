@@ -3,7 +3,7 @@ from typing import List, Optional
 
 
 class Recommendation(BaseModel):
-    id: Optional[int]
+    id: Optional[int] = None
     question: str
     description: str
     estimated_saving: float

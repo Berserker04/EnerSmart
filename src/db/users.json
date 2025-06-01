@@ -1,18 +1,80 @@
 [
-    {
-        "id": 1,
-        "fullName": "Administrador",
-        "userName": "admin",
-        "password": "123",
-        "rol": "Admin",
-        "diagnostic": []
-    },
-    {
-        "id": 1,
-        "fullName": "Carlos Hernandez",
-        "userName": "carlosH",
-        "password": "123",
-        "rol": "Client",
-        "diagnostic": []
-    }
+  {
+    "id": 1,
+    "fullName": "Administrador",
+    "userName": "admin",
+    "password": "123",
+    "rol": "Admin",
+    "diagnostics": []
+  },
+  {
+    "id": 2,
+    "fullName": "Carlos Hernandez",
+    "userName": "carlosH",
+    "password": "123",
+    "rol": "Client",
+    "diagnostics": [
+      {
+        "recommendations": [
+          "Cambia tus bombillas incandescentes por bombillas LED para reducir el consumo energético.",
+          "Limpia los filtros regularmente y ajusta el termostato para mejorar la eficiencia.",
+          "Reemplaza el refrigerador antiguo por uno de alta eficiencia energética (certificado)."
+        ],
+        "optimized_kwh": 216.0,
+        "total_saving_percent": 28.000000000000004
+      },
+      {
+        "recommendations": [
+          "Cambia tus bombillas incandescentes por bombillas LED para reducir el consumo energético.",
+          "Limpia los filtros regularmente y ajusta el termostato para mejorar la eficiencia.",
+          "Reemplaza el refrigerador antiguo por uno de alta eficiencia energética (certificado)."
+        ],
+        "optimized_kwh": 216.0,
+        "total_saving_percent": 28.000000000000004
+      },
+      {
+        "recommendations": [
+          "Lava con agua fría y seca la ropa al aire libre para ahorrar energía.",
+          "Considera cambiar a un calentador sin tanque o solar para ahorrar energía.",
+          "Usa regletas con interruptor para apagar varios dispositivos al mismo tiempo.",
+          "Agrupa los usos de estos equipos para reducir la frecuencia de consumo energético."
+        ],
+        "optimized_kwh": 225.0,
+        "total_saving_percent": 25.0
+      },
+      {
+        "recommendations": [
+          "Lava con agua fría y seca la ropa al aire libre para ahorrar energía.",
+          "Considera cambiar a un calentador sin tanque o solar para ahorrar energía.",
+          "Usa regletas con interruptor para apagar varios dispositivos al mismo tiempo.",
+          "Agrupa los usos de estos equipos para reducir la frecuencia de consumo energético."
+        ],
+        "optimized_kwh": 225.0,
+        "total_saving_percent": 25.0
+      },
+      {
+        "recommendations": [
+          "Lava con agua fría y seca la ropa al aire libre para ahorrar energía."
+        ],
+        "optimized_kwh": 276.0,
+        "total_saving_percent": 8.0
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "fullName": "Carlos Hernandez",
+    "userName": "carlosH",
+    "password": "123",
+    "rol": "Client",
+    "diagnostics": []
+  },
+  {
+    "id": 4,
+    "fullName": "Carlos Hernandez",
+    "userName": "carlosH",
+    "password": "123",
+    "rol": "Client",
+    "diagnostics": []
+  }
 ]

@@ -4,9 +4,9 @@ from src.service import diagnosticService
 
 router = APIRouter()
 
-@router.post("/", response_model=Diagnostic)
-def run_diagnostic(data: DiagnosticRequest):
+@router.post("/{id}", response_model=Diagnostic)
+def run_diagnostic(id: int, data: DiagnosticRequest):
     try:
-        return diagnosticService.perform_diagnostic(data)
+        return diagnosticService.perform_diagnostic(id, data)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
