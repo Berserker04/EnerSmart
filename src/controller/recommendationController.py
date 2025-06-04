@@ -7,7 +7,7 @@ router = APIRouter()
 
 @router.get("/", response_model=List[Recommendation])
 def get_recommendations():
-    return recommendationService.get_all_recommendations()
+    return recommendationService.get_all_recommendations()[::-1]
 
 @router.post("/", response_model=Recommendation)
 def create_recommendation(rec: Recommendation):

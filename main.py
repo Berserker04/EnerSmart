@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 # from model.recommendationModel import CalculationRequest, RecommendationResponse
 # from src.logic.logic import load_recommendations, filter_and_calculate
@@ -17,10 +17,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(recommendation_router, prefix="/recommendations", tags=["Recommendations"])
-app.include_router(user_router, prefix="/users", tags=["Users"])
-app.include_router(diagnostic_router, prefix="/diagnostic", tags=["Diagnostic"])
-app.include_router(auth_router, prefix="/auth", tags=["Auth"])
+api_router = APIRouter(prefix="/api")
+api_router.include_router(recommendation_router, prefix="/recommendations", tags=["Recommendations"])
+api_router.include_router(user_router, prefix="/users", tags=["Users"])
+api_router.include_router(diagnostic_router, prefix="/diagnostic", tags=["Diagnostic"])
+api_router.include_router(auth_router, prefix="/auth", tags=["Auth"])
+
+app.include_router(api_router)
 
 # recommendations = load_recommendations()
 

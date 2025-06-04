@@ -7,5 +7,5 @@ class User(BaseModel):
     fullName: str
     userName: str
     password: str
-    rol: str
+    rol: Optional[str] = "Client"
     diagnostics: List[Diagnostic] = []

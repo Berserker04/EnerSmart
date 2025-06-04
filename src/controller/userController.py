@@ -12,13 +12,16 @@ def get_users():
 @router.get("/{id}", response_model=User)
 def get_user(id: int):
     try:
-        return userService.get_user_by_id(id)
+        user = userService.get_user_by_id(id)
+        user.diagnostics = user.diagnostics[::-1]
+        return user
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
 
 @router.post("/", response_model=User)
 def create_user(user: User):
-    userService.add_user(user)
+    user = userService.add_user(user)
+    user.diagnostics = user.diagnostics[::-1]
     return user
 
 @router.put("/", response_model=User)

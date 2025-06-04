@@ -1,6 +1,7 @@
 from src.model.diagnosticModel import DiagnosticRequest, Diagnostic
 from src.model.recommendationModel import Recommendation
 from src.store import recommendationStore, userStore
+from datetime import date
 
 def perform_diagnostic(id, data: DiagnosticRequest) -> Diagnostic:
     all_recs: list[Recommendation] = recommendationStore.load_all()
@@ -11,7 +12,8 @@ def perform_diagnostic(id, data: DiagnosticRequest) -> Diagnostic:
     diagnostic = Diagnostic(
         recommendations=[rec.description for rec in selected],
         optimized_kwh=optimized_kwh,
-        total_saving_percent=total_saving * 100
+        total_saving_percent=total_saving * 100,
+        create_date=date.today()
     )
 
     userStore.add_diagnostic_to_user(id, diagnostic)

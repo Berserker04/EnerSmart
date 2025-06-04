@@ -10,8 +10,6 @@ def load_all() -> List[User]:
         data = json.load(f)
     return [User(**item) for item in data]
 
-from src.model.userModel import User
-
 def get_user_by_id(user_id: int) -> User:
     users = load_all()
     for u in users:
@@ -22,7 +20,7 @@ def get_user_by_id(user_id: int) -> User:
 
 def save_all(users: List[User]):
     with open(path, "w", encoding="utf-8") as f:
-        json.dump([u.model_dump() for u in users], f, ensure_ascii=False, indent=2)
+        json.dump([u.model_dump(mode="json") for u in users], f, ensure_ascii=False, indent=2)
 
 def add(user: User):
     users = load_all()
@@ -63,5 +61,6 @@ def find_by_credentials(username: str, password: str) -> User:
     users = load_all()
     for u in users:
         if u.userName == username and u.password == password:
+            u.diagnostics = u.diagnostics[::-1]
             return u
     raise ValueError("Credenciales inválidas")
