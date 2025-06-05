@@ -58,17 +58,5 @@
     "question": "¿Usas plancha, horno o secador de cabello varias veces por semana?",
     "description": "Agrupa los usos de estos equipos para reducir la frecuencia de consumo energético.",
     "estimated_saving": 0.06
-  },
-  {
-    "id": 14,
-    "question": "¿Tu refrigerador tiene más de 10 años de uso?",
-    "description": "Reemplaza el refrigerador antiguo por uno de alta eficiencia energética (certificado).",
-    "estimated_saving": 0.11
-  },
-  {
-    "id": 15,
-    "question": "vvv1",
-    "description": "ggg",
-    "estimated_saving": 1.0
   }
 ]

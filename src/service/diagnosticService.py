@@ -11,6 +11,7 @@ def perform_diagnostic(id, data: DiagnosticRequest) -> Diagnostic:
 
     diagnostic = Diagnostic(
         recommendations=[rec.description for rec in selected],
+        current_kwh=data.current_kwh,
         optimized_kwh=optimized_kwh,
         total_saving_percent=total_saving * 100,
         create_date=date.today()

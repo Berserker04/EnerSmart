@@ -15,25 +15,31 @@
     "rol": "Client",
     "diagnostics": [
       {
-        "id": "aa93f110-c6f7-4c96-9db0-817db4a6bca4",
+        "id": "80a49770-ee3a-417d-b960-114435bcc37f",
         "recommendations": [
-          "Cambia tus bombillas incandescentes por bombillas LED para reducir el consumo energético.",
-          "Aprovecha la luz natural y apaga las luces innecesarias durante el día."
+          "Aprovecha la luz natural y apaga las luces innecesarias durante el día.",
+          "Limpia los filtros regularmente y ajusta el termostato para mejorar la eficiencia.",
+          "Sella las fugas con burletes o masilla para mantener la temperatura interior."
         ],
-        "optimized_kwh": 255.0,
-        "total_saving_percent": 15.000000000000002,
-        "create_date": "2025-06-04"
+        "current_kwh": 400.0,
+        "optimized_kwh": 312.0,
+        "total_saving_percent": 22.000000000000004,
+        "create_date": "2025-06-05"
       },
       {
-        "id": "da9e0015-c2fb-44d7-8c4c-c9faa6588ac5",
+        "id": "74fcc52c-5337-4b0f-b020-fe46df1c71ba",
         "recommendations": [
-          "Lava con agua fría y seca la ropa al aire libre para ahorrar energía.",
+          "Aprovecha la luz natural y apaga las luces innecesarias durante el día.",
           "Limpia los filtros regularmente y ajusta el termostato para mejorar la eficiencia.",
-          "Considera cambiar a un calentador sin tanque o solar para ahorrar energía."
+          "Sella las fugas con burletes o masilla para mantener la temperatura interior.",
+          "Considera cambiar a un calentador sin tanque o solar para ahorrar energía.",
+          "Reemplaza el refrigerador antiguo por uno de alta eficiencia energética (certificado).",
+          "Desconecta cargadores y aparatos que no estás utilizando para evitar consumo fantasma."
         ],
-        "optimized_kwh": 228.0,
-        "total_saving_percent": 24.0,
-        "create_date": "2025-06-04"
+        "current_kwh": 600.0,
+        "optimized_kwh": 330.0,
+        "total_saving_percent": 45.0,
+        "create_date": "2025-06-05"
       }
     ]
   },

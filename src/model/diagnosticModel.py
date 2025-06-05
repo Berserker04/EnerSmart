@@ -10,6 +10,7 @@ class DiagnosticRequest(BaseModel):
 class Diagnostic(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     recommendations: List[str]
+    current_kwh: float
     optimized_kwh: float
     total_saving_percent: float
     create_date: date
